@@ -36,75 +36,68 @@ export default function Form({ onAdd, todo }) {
       <h2>registration form</h2>
       <form id="todo" onSubmit={handleSubmit}>
         <table className="tbl">
-          <div className="row">
-            <div className="column">
-              <tr>
-                <th>
-                  <label>Enter your name: </label>
-                </th>
-                <td>
-                  <input
-                    type="text"
-                    name="name"
-                    defaultValue={""}
-                    onChange={handleChange}
-                  />
-                </td>
-              </tr>
+          <tr>
+            <th>
+              <label>Enter your name: </label>
+            </th>
+            <td>
+              <input
+                type="text"
+                name="name"
+                defaultValue={""}
+                onChange={handleChange}
+              />
+            </td>
+          </tr>
 
-              <tr>
-                <th>
-                  <label>Enter your E-mail: </label>
-                </th>
-                <td>
-                  <input
-                    type="text"
-                    name="email"
-                    defaultValue={""}
-                    onChange={handleChange}
-                  />
-                </td>
-              </tr>
+          <tr>
+            <th>
+              <label>Enter your E-mail: </label>
+            </th>
+            <td>
+              <input
+                type="text"
+                name="email"
+                defaultValue={""}
+                onChange={handleChange}
+              />
+            </td>
+          </tr>
 
-              <tr>
-                <th>
-                  <label>Enter your password: </label>
-                </th>
-                <td>
-                  <input
-                    type="password"
-                    name="password"
-                    defaultValue={""}
-                    onChange={handleChange}
-                  />
-                </td>
-              </tr>
+          <tr>
+            <th>
+              <label>Enter your password: </label>
+            </th>
+            <td>
+              <input
+                type="password"
+                name="password"
+                defaultValue={""}
+                onChange={handleChange}
+              />
+            </td>
+          </tr>
 
-              <tr>
-                <th>
-                  <label>Enter your age:</label>{" "}
-                </th>
-                <td>
-                  <input
-                    type="number"
-                    name="age"
-                    defaultValue={""}
-                    onChange={handleChange}
-                  />
-                </td>
-              </tr>
-              <Checkbox current={vehicle} setCurrent={setVehicle} />
-              <br />
-              <tr>
-                <th>
-                  <button type="submit">SUBMIT</button>
-                </th>
-              </tr>
-            </div>
-            <div className="column">
-              <h2> list</h2>
-            </div>
-          </div>
+          <tr>
+            <th>
+              <label>Enter your age:</label>{" "}
+            </th>
+            <td>
+              <input
+                type="number"
+                name="age"
+                defaultValue={""}
+                onChange={handleChange}
+              />
+            </td>
+          </tr>
+          <Checkbox current={vehicle} setCurrent={setVehicle} />
+          <br />
+          <tr>
+            <th>
+              <button type="submit">SUBMIT</button>
+            </th>
+          </tr>
         </table>
       </form>
     </>

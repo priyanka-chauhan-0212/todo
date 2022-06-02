@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Form from "./Form";
 import Todo from "./Todo";
+import "./styles.css";
 
 export default function Logic() {
   const [todo, setTodo] = useState([]);
@@ -13,8 +14,14 @@ export default function Logic() {
 
   return (
     <div className="grid">
-      <Form onAdd={addtodo} />
-      <Todo todo={todo} />
+      <div className="row">
+        <div className="column">
+          <Form onAdd={addtodo} />
+        </div>
+        <div className="column">
+          <Todo todo={todo} />
+        </div>
+      </div>
     </div>
   );
 }
